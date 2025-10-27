@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookList App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">        
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.8/yeti/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="display-4 text-center fst-italic"><i class="fa-solid fa-book text-warning me-2 "></i>Book<span class="text-warning">List</span></h1>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+         <div id="container">
+        <form id="book-form" class="mb-4">
+            <div class="form-group mb-4">
+                <div class="mb-3">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="input form-control text-capitalize">
+            </div>
+
+                <div class="mb-3">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="input form-control text-capitalize">
+            </div>
+
+                <div class="mb-3">
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="input form-control text-capitalize">
+            </div>
+   
+            <div class="text-center">
+            <input type="submit" value="Add book" class="btn btn-primary mt-4">
+            </div>
+        </form>
+        </div>
+        </div>
+  
+        <div class="row justify-content-center">
+        <div class="col-md-10">
+        <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+        </table>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
